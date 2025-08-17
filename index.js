@@ -23,4 +23,16 @@ console.log("Total vowels",count);
 
 
 
+//?problem 3 : Check for Palindrome  ========>
+
+function palindrome(params) {
+    const convert= params.toLowerCase()
+    const data=convert.split("").reverse().join("")
+    const check = convert === data
+    return check
+}
+console.log("Palindrome", palindrome("Madam"))
+
+
+
 
