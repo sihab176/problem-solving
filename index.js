@@ -5,7 +5,7 @@ let reverse=""
 for(let i = name.length-1 ; i >=0 ; i--){
     reverse =reverse + name[i]
 }
-// console.log("reverse",reverse);
+// console.log(reverse);
 
 
 
@@ -36,12 +36,15 @@ function palindrome(params) {
 }
 // console.log("Palindrome", palindrome("Madam"))
 
+
+
 //? Problem 4: Find the Maximum Number========>
 function findMaximumNumber(params){
     const result= Math.max(...params)
     return result
 }
-// console.log(findMaximumNumber([5, 1, 9, 3]));
+// console.log("Maximum Number :", findMaximumNumber([5, 1, 9, 3]));
+
 
 
 
@@ -58,6 +61,8 @@ function removeDuplicate(params){
 }
 // console.log(removeDuplicate([1, 2, 2, 3, 4, 4]));
 
+
+
 //? Problem 6: Sum of All Numbers in an Array =====>
 function totalSum(params){
 
@@ -69,6 +74,8 @@ function totalSum(params){
 
 }
 // console.log("sum :" ,totalSum([1, 2, 3, 4,]));
+
+
 
 
 // ?Problem 7: Find Even Numbers in an Array ======>
@@ -110,4 +117,20 @@ return result.join(" ")
    }
 
 //    console.log(factorial(5));
+
+//? Problem 10: PingPong Challenge =======>
+function pingPongFun(){
+    for(let i =1 ; i <=20 ; i++){
+        if((i % 3 ===0 )&& (i % 5 ===0)){
+              console.log("pingPong");
+        }else if( i % 3  ===0){
+          console.log("ping");
+        }else if (i % 5===0){
+            console.log("pong");
+        }else{
+            console.log(i);
+        }
+    }
+}
+// pingPongFun()
 
